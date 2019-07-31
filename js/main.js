@@ -17,22 +17,22 @@ $(function(){
  
     var elem = $('#header');
     var top = $(this).scrollTop();
-     
+
     if(top > h_hght){
         elem.addClass('dark');
-        $('.logo_a img').attr('src', '/local/templates/evolet/img/logo_dark_title.png');
+        $('.logo_a img').attr('src', 'wp-content/themes/evolet.ru/img/logo_dark_title.png');
     }           
-     
+
     $(window).scroll(function(){
         top = $(this).scrollTop();
          
         if (top+h_mrg < h_hght) {
             elem.removeClass('dark');
-            $('.logo_a img').attr('src', '/local/templates/evolet/img/logo.svg');
+            $('.logo_a img').attr('src', 'wp-content/themes/evolet.ru/img/logo.svg');
 
         } else {
         	elem.addClass('dark');
-            $('.logo_a img').attr('src', '/local/templates/evolet/img/logo_dark_title.png');
+            $('.logo_a img').attr('src', 'wp-content/themes/evolet.ru/img/logo_dark_title.png');
 
         }
     });

@@ -50,8 +50,6 @@
                                     <a target="_blank" href="https://www.linkedin.com/company/evolet-healthcare"
                                         class="socials__link in"></a>
                                 </div>
-                                <a target="_blank" href="https://qb.digita1/" class="creater" rel="nofollow">Создание
-                                    сайта</a>
                             </div>
                         </div>
                     </div>
@@ -65,7 +63,6 @@
         <div id="mark_title_name" class="mark_title__name">Город</div>
     </div>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123986695-13"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -102,37 +99,11 @@
     <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/fancybox.js"></script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/index.js"></script>
     <script type="text/javascript"
-        src="local/templates/evolet/components/bitrix/news.list/interactive_map_main/script.js@15331273251532"></script>
+        src="<?php echo get_template_directory_uri() ?>/components/interactive_map_main/script.js"></script>
     <script
         type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "1560f0cab2f34a027d61b07434373ea1"]); _ba.push(["host", "evolet.ru"]); (function () { var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true; ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ba, s); })();</script>
 
-
-    <script type="text/javascript">
-        (function (d, w, c) {
-            (w[c] = w[c] || []).push(function () {
-                try {
-                    w.yaCounter48757154 = new Ya.Metrika({
-                        id: 48757154,
-                        clickmap: true,
-                        trackLinks: true,
-                        accurateTrackBounce: true,
-                        webvisor: true
-                    });
-                } catch (e) { }
-            });
-
-            var n = d.getElementsByTagName("script")[0],
-                s = d.createElement("script"),
-                f = function () { n.parentNode.insertBefore(s, n); };
-            s.type = "text/javascript";
-            s.async = true;
-            s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-            if (w.opera == "[object Opera]") {
-                d.addEventListener("DOMContentLoaded", f, false);
-            } else { f(); }
-        })(document, window, "yandex_metrika_callbacks");
-    </script>
+    
     <script>
         let intMap = new interactiveMap(JSON.parse('[{"x":"256.6","y":"216.08677842259493","desc":"","country":null},{"x":"256.6","y":"76.8","desc":"Evolet - \u0422\u0430\u0434\u0436\u0438\u043a\u0438\u0441\u0442\u0430\u043d","country":null},{"x":"316.","y":"113.5","desc":"\u0424\u0438\u043b\u0438\u043f\u043f\u0438\u043d\u044b","country":"PH"},{"x":"293.5","y":"101.3","desc":"\u0412\u044c\u0435\u0442\u043d\u0430\u043c","country":"VN"},{"x":"291.5","y":"105.5","desc":"\u041c\u044c\u044f\u043d\u043c\u0430","country":"MM"},{"x":"297.6","y":"109.3","desc":"\u041a\u0430\u043c\u0431\u043e\u0434\u0436\u0430","country":"KH"},{"x":"266.7","y":"96.9","desc":"\u0418\u043d\u0434\u0438\u044f","country":"IN"},{"x":"295.5","y":"64.6","desc":"\u041c\u043e\u043d\u0433\u043e\u043b\u0438\u044f","country":"MN"},{"x":"225.7","y":"81","desc":"\u0413\u0440\u0443\u0437\u0438\u044f","country":"GE"},{"x":"230","y":"73","desc":"\u0410\u0437\u0435\u0440\u0431\u0430\u0439\u0434\u0436\u0430\u043d","country":"AZ"},{"x":"260.7","y":"76.8","desc":"\u041a\u044b\u0440\u0433\u044b\u0437\u0441\u0442\u0430\u043d","country":"KG"},{"x":"653.59375","y":"216.08677842259493","desc":"\u0422\u0430\u0434\u0436\u0438\u043a\u0438\u0441\u0442\u0430\u043d","country":"TJ"},{"x":"254.5","y":"81","desc":"\u0410\u0444\u0433\u0430\u043d\u0438\u0441\u0442\u0430\u043d","country":"AF"},{"x":"244.3","y":"77","desc":"\u0422\u0443\u0440\u043a\u043c\u0435\u043d\u0438\u0441\u0442\u0430\u043d","country":"TM"},{"x":"256.7","y":"76.5","desc":"\u0423\u0437\u0431\u0435\u043a\u0438\u0441\u0442\u0430\u043d","country":"UZ"},{"x":"201.3","y":"56.4","desc":"\u041c\u043e\u0441\u043a\u0432\u0430","country":"RU"},{"x":"265","y":"76.5","desc":"\u041a\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043d","country":"KZ"}]'), document.getElementById('map_svg'));
     </script>

@@ -2068,21 +2068,21 @@ body {
 }
 
 .header .socials__link.fb {
-    background-image: url(../img/icons/icon_fb.png)
+    background-image: url(./img/icons/icon_fb.png)
 }
 
 .header .socials__link.fb::after,
 .header .socials__link.fb:hover {
-    background-image: url(../img/icons/icon_fb_hover.png)
+    background-image: url(./img/icons/icon_fb_hover.png)
 }
 
 .header .socials__link.in {
-    background-image: url(../img/icons/icon_in.png)
+    background-image: url(./img/icons/icon_in.png)
 }
 
 .header .socials__link.in::after,
 .header .socials__link.in:hover {
-    background-image: url(../img/icons/icon_in_hover.png)
+    background-image: url(./img/icons/icon_in_hover.png)
 }
 
 .header .nav_btn {
@@ -3071,7 +3071,7 @@ body {
 .footer {
     padding: 40px 0 0;
     background-color: #4a4a4a;
-    background-image: url(../img/background_footer.gif);
+    background-image: url(./img/background_footer.gif);
     color: #fff;
     height: 190px
 }
@@ -3242,21 +3242,21 @@ body {
 }
 
 .footer__nav .links .socials__link.fb {
-    background-image: url(../img/icons/icon_fb_footer.png)
+    background-image: url(./img/icons/icon_fb_footer.png)
 }
 
 .footer__nav .links .socials__link.fb::after,
 .footer__nav .links .socials__link.fb:hover {
-    background-image: url(../img/icons/icon_fb_footer_hover.png)
+    background-image: url(./img/icons/icon_fb_footer_hover.png)
 }
 
 .footer__nav .links .socials__link.in {
-    background-image: url(../img/icons/icon_in_footer.png)
+    background-image: url(./img/icons/icon_in_footer.png)
 }
 
 .footer__nav .links .socials__link.in::after,
 .footer__nav .links .socials__link.in:hover {
-    background-image: url(../img/icons/icon_in_footer_hover.png)
+    background-image: url(./img/icons/icon_in_footer_hover.png)
 }
 
 .footer__nav .links .creater {
@@ -3457,12 +3457,12 @@ body {
 }
 
 .slick-prev:before {
-    background-image: url(../img/arrow_left.png)
+    background-image: url(./img/arrow_left.png)
 }
 
 .slick-prev:after,
 .slick-prev:hover:before {
-    background-image: url(../img/arrow_left_hover.png)
+    background-image: url(./img/arrow_left_hover.png)
 }
 
 .slick-next {
@@ -3471,12 +3471,12 @@ body {
 }
 
 .slick-next:before {
-    background-image: url(../img/arrow_right.png)
+    background-image: url(./img/arrow_right.png)
 }
 
 .slick-next:after,
 .slick-next:hover:before {
-    background-image: url(../img/arrow_right_hover.png)
+    background-image: url(./img/arrow_right_hover.png)
 }
 
 .slick-dots {
