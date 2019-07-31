@@ -1,0 +1,15 @@
+.p-conf {
+    font-size: 12px;
+    color: #9b9b9b;
+    font-weight:bold;
+    transition: all .3s ease;
+}
+
+.p-conf:hover {
+    color:#fff;
+    text-decoration: none;
+}
+
+.header.dark .contacts .phone, .header.dark .contacts .adres{
+    color: #c1c1c1;
+}
