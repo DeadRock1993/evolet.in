@@ -11,36 +11,30 @@
                             <div class="contacts">
                                 <div class="name">Evolet</div>
                                 <div class="adres">
-                                    Россия, Москва ул. Осенний бульвар, 23 </div>
+                                201-203 (2nd floor),
+                                Tower B, Global Business Park,
+                                Sector 26, Gurugram – 122002, India. </div>
                                 <a href="mailto:info@evolet.ru" class="mail">info@evolet.ru</a>
-                                <a class="p-conf" target="_blank" href="policy/index.html">Политика обработки
+                                <a class="p-conf" target="_blank" href="<?php echo home_url( '/' ); ?>/policy">Политика обработки
                                     персональных данных</a>
                             </div>
                         </div>
                         <div class="footer__nav">
 
-
                             <nav class="nav_footer">
-
-
-                                <a href="about/index.php" class="nav_footer__link">о нас</a>
-
-
-                                <a href="activities/index.html" class="nav_footer__link">наши услуги</a>
-
-
-                                <a href="catalog/index.html" class="nav_footer__link">продукты</a>
-
-
-                                <a href="partnership/index.html" class="nav_footer__link">партнерство</a>
-
-
-                                <a href="career/index.html" class="nav_footer__link">карьера</a>
-
-
-                                <a href="contacts/index.html" class="nav_footer__link">контакты</a>
-
-
+                                    <?php 
+                                    $menuParameters = array(
+                                        'theme_location'  => 'menu',
+                                        'container'       => false,
+                                        'echo'            => false,
+                                        'items_wrap'      => '%3$s',
+                                        'depth'           => 0,
+                                    );
+                                    
+                                    echo strip_tags(wp_nav_menu( $menuParameters ), '<a>' );
+                                    
+                                    ?>
+                                    
                             </nav>
 
                             <div class="links">
@@ -63,35 +57,7 @@
         <div id="mark_title_name" class="mark_title__name">Город</div>
     </div>
 
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-123986695-13');
-    </script>
-    <script
-        type="text/javascript">if (!window.BX) window.BX = {}; if (!window.BX.message) window.BX.message = function (mess) { if (typeof mess == 'object') for (var i in mess) BX.message[i] = mess[i]; return true; };</script>
-    <script
-        type="text/javascript">(window.BX || top.BX).message({ 'JS_CORE_LOADING': 'Загрузка...', 'JS_CORE_NO_DATA': '- Нет данных -', 'JS_CORE_WINDOW_CLOSE': 'Закрыть', 'JS_CORE_WINDOW_EXPAND': 'Развернуть', 'JS_CORE_WINDOW_NARROW': 'Свернуть в окно', 'JS_CORE_WINDOW_SAVE': 'Сохранить', 'JS_CORE_WINDOW_CANCEL': 'Отменить', 'JS_CORE_WINDOW_CONTINUE': 'Продолжить', 'JS_CORE_H': 'ч', 'JS_CORE_M': 'м', 'JS_CORE_S': 'с', 'JSADM_AI_HIDE_EXTRA': 'Скрыть лишние', 'JSADM_AI_ALL_NOTIF': 'Показать все', 'JSADM_AUTH_REQ': 'Требуется авторизация!', 'JS_CORE_WINDOW_AUTH': 'Войти', 'JS_CORE_IMAGE_FULL': 'Полный размер' });</script>
-    <script
-        type="text/javascript">(window.BX || top.BX).message({ 'LANGUAGE_ID': 'ru', 'FORMAT_DATE': 'DD.MM.YYYY', 'FORMAT_DATETIME': 'DD.MM.YYYY HH:MI:SS', 'COOKIE_PREFIX': 'BITRIX_SM', 'SERVER_TZ_OFFSET': '0', 'SITE_ID': 's1', 'SITE_DIR': '/', 'USER_ID': '', 'SERVER_TIME': '1563273272', 'USER_TZ_OFFSET': '0', 'USER_TZ_AUTO': 'Y', 'bitrix_sessid': '4fc040c9a0c85bf4597b5f9e40bdd278' });</script>
-    <script type="text/javascript"
-        src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/bitrix/js/main/core/core.js?1532490394125972"></script>
-    <script type="text/javascript"
-        src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/bitrix/js/main/core/core_db.js?153249013220929"></script>
-    <script type="text/javascript"
-        src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/bitrix/js/main/core/core_ajax.js?153249039441004"></script>
-    <script type="text/javascript"
-        src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/bitrix/js/main/json/json2.min.js?15324901323467"></script>
-    <script type="text/javascript"
-        src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/bitrix/js/main/core/core_ls.js?153249013210430"></script>
-    <script type="text/javascript"
-        src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/bitrix/js/main/core/core_fx.js?153249013216888"></script>
-    <script type="text/javascript"
-        src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/bitrix/js/main/core/core_frame_cache.js?153249039417797"></script>
-    <script
-        type="text/javascript">var bxDate = new Date(); document.cookie = "BITRIX_SM_TIME_ZONE=" + bxDate.getTimezoneOffset() + "; path=/; expires=Fri, 01-Jan-2038 00:00:00 GMT"</script>
+   
     
     
     <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/components/interactive_map/script.js"></script>
@@ -108,11 +74,11 @@
     <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/index.js"></script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/about.js"></script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/custom-scroll.js"></script>
-    
-  
-  
+    <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/products.js"></script>
+
     <script
-        type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "1560f0cab2f34a027d61b07434373ea1"]); _ba.push(["host", "evolet.ru"]); (function () { var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true; ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ba, s); })();</script>
+        type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "1560f0cab2f34a027d61b07434373ea1"]); _ba.push(["host", "evolet.ru"]); (function () { var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true; ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ba, s); })();
+    </script>
 
     
     <script>

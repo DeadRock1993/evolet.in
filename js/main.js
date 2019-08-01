@@ -47,6 +47,10 @@ function toggle_nav() {
   $('#header').toggleClass('visible');
 }
 
+(function addClassLinks() {
+  let footerLinks = $('.nav_footer a');
+  footerLinks.addClass('nav_footer__link');
+})();
 /*
 $('.file_input').change(function() {
   //находим родительский блок с классом file_select (обертка кнопки)

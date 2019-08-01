@@ -51,7 +51,7 @@
 
         <div class="contacts_top__item"
              id=""
-             onclick="oContactsPage.activate('');"
+             onclick="oContactsPage.activate('tj');"
              data-coords="38.5780829,68.7480082"
         >
             <div class="country"></div>
@@ -113,11 +113,12 @@
         <div class="contacts_top__item"
              id="in"
              onclick="oContactsPage.activate('in');"
-             data-coords=""
+             data-coords="28.4811562,77.1014546,19"
         >
             <div class="country">Индия</div>
             <div class="adres">
-                            </div>
+                201-203 (2nd floor), Tower B, Global Business Park, Sector 26, Gurugram – 122002, India.
+            </div>
                     </div>
 
     
@@ -226,9 +227,10 @@
         >
             <div class="country">Россия</div>
             <div class="adres">
-                Россия, Москва ул. Осенний бульвар, 23            </div>
-                                                <a href="mailto:info@evolet.ru" class="mail">info@evolet.ru</a>
-                                    </div>
+                Россия, Москва ул. Осенний бульвар, 23            
+            </div>
+                <a href="mailto:info@evolet.ru" class="mail">info@evolet.ru</a>
+            </div>
 
     
 
