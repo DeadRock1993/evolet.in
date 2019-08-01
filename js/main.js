@@ -16,11 +16,12 @@ var h_mrg = 0;    // отступ когда шапка уже не видна
 $(function(){
  
     var elem = $('#header');
+    let aLinks = $('.nav_header a');
     var top = $(this).scrollTop();
 
     if(top > h_hght){
         elem.addClass('dark');
-        $('.logo_a img').attr('src', 'wp-content/themes/evolet.ru/img/logo_dark_title.png');
+        $('.logo_a img').attr('src', theme_directory + '/img/logo_dark_title.png');
     }           
 
     $(window).scroll(function(){
@@ -28,11 +29,13 @@ $(function(){
          
         if (top+h_mrg < h_hght) {
             elem.removeClass('dark');
-            $('.logo_a img').attr('src', 'wp-content/themes/evolet.ru/img/logo.svg');
+            aLinks.removeClass('nav_header__link');
+            $('.logo_a img').attr('src', theme_directory+'/img/logo.svg');
 
         } else {
-        	elem.addClass('dark');
-            $('.logo_a img').attr('src', 'wp-content/themes/evolet.ru/img/logo_dark_title.png');
+          elem.addClass('dark');
+          aLinks.addClass('nav_header__link');
+            $('.logo_a img').attr('src', theme_directory+'/img/logo_dark_title.png');
 
         }
     });

@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <script>
+        theme_directory = "<?php echo get_template_directory_uri() ?>";
+    </script>
+    <?php wp_head();?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,10 +17,15 @@
         data-skip-moving="true">(function (w, d, n) { var cl = "bx-core"; var ht = d.documentElement; var htc = ht ? ht.className : undefined; if (htc === undefined || htc.indexOf(cl) !== -1) { return; } var ua = n.userAgent; if (/(iPad;)|(iPhone;)/i.test(ua)) { cl += " bx-ios"; } else if (/Android/i.test(ua)) { cl += " bx-android"; } cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch"); cl += w.devicePixelRatio && w.devicePixelRatio >= 2 ? " bx-retina" : " bx-no-retina"; var ieVersion = -1; if (/AppleWebKit/.test(ua)) { cl += " bx-chrome"; } else if ((ieVersion = getIeVersion()) > 0) { cl += " bx-ie bx-ie" + ieVersion; if (ieVersion > 7 && ieVersion < 10 && !isDoctype()) { cl += " bx-quirks"; } } else if (/Opera/.test(ua)) { cl += " bx-opera"; } else if (/Gecko/.test(ua)) { cl += " bx-firefox"; } if (/Macintosh/i.test(ua)) { cl += " bx-mac"; } ht.className = htc ? htc + " " + cl : cl; function isDoctype() { if (d.compatMode) { return d.compatMode == "CSS1Compat"; } return d.documentElement && d.documentElement.clientHeight; } function getIeVersion() { if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)) { return -1; } var rv = -1; if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)) { rv = 11; } else if (!!d.documentMode && d.documentMode >= 10) { rv = 10; } else if (!!d.documentMode && d.documentMode >= 9) { rv = 9; } else if (d.attachEvent && !/Opera/.test(ua)) { rv = 8; } if (rv == -1 || rv == 8) { var re; if (n.appName == "Microsoft Internet Explorer") { re = new RegExp("MSIE ([0-9]+[\.0-9]*)"); if (re.exec(ua) != null) { rv = parseFloat(RegExp.$1); } } else if (n.appName == "Netscape") { rv = 11; re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)"); if (re.exec(ua) != null) { rv = parseFloat(RegExp.$1); } } } return rv; } })(window, document, navigator);</script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" type="text/css"
         rel="stylesheet" />
+
+    <link href="<?php echo get_template_directory_uri() ?>/css/contacts.css" type="text/css"  rel="stylesheet" />
+    <link href="<?php echo get_template_directory_uri() ?>/css/career.css" type="text/css"  rel="stylesheet" />
+    <link href="<?php echo get_template_directory_uri() ?>/css/partners.css" type="text/css"  rel="stylesheet" />
+    <link href="<?php echo get_template_directory_uri() ?>/css/activities.css" type="text/css"  rel="stylesheet" />
+    <link href="<?php echo get_template_directory_uri() ?>/css/about.css" type="text/css"  rel="stylesheet" />
     <link href="<?php echo get_template_directory_uri() ?>/style.css" type="text/css" rel="stylesheet" />
     <link href="<?php echo get_template_directory_uri() ?>/css/all.css" type="text/css" data-template-style="true" rel="stylesheet" />
     <title>Evolet - Вера в здоровое будущее</title>
-    <?php wp_head();?>
 </head>
 <body>
 <header class="header" id="header">
@@ -27,30 +36,22 @@
                     <a class="logo_a" href="javascript:;">
                         <img src="<?php echo get_template_directory_uri() ?>/img/logo.svg" class="logo">
                     </a>
-                    <div class="nav_heder_wrap">
-
+                   <div class="nav_heder_wrap">
 
                         <nav class="nav_header">
-
-
-                            <a href="about/index.html" class="nav_header__link">о нас</a>
-
-
-                            <a href="activities/index.html" class="nav_header__link">наши услуги</a>
-
-
-                            <a href="catalog/index.html" class="nav_header__link">продукты</a>
-
-
-                            <a href="partnership/index.html" class="nav_header__link">партнерство</a>
-
-
-                            <a href="career/index.html" class="nav_header__link">карьера</a>
-
-
-                            <a href="contacts/index.html" class="nav_header__link">контакты</a>
-
-
+                                <?php 
+                                $menuParameters = array(
+                                    'theme_location'  => 'menu',
+                                    'container'       => false,
+                                    'echo'            => false,
+                                    'items_wrap'      => '%3$s',
+                                    'depth'           => 0,
+                                  );
+                                  
+                                echo strip_tags(wp_nav_menu( $menuParameters ), '<a>' );
+                                
+                                ?>
+                                
                         </nav>
 
                         <div class="contacts">
@@ -89,7 +90,7 @@
                             </div>
                             <a href="mailto:info@evolet.ru" class="mail">info@evolet.ru</a>
                         </div>
-                    </div>
+                    </div> 
 
                     <div class="socials">
                         <a target="_blank" href="https://www.facebook.com/evolet.co.uk/"

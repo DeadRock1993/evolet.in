@@ -23,7 +23,7 @@
                             <nav class="nav_footer">
 
 
-                                <a href="about/index.html" class="nav_footer__link">о нас</a>
+                                <a href="about/index.php" class="nav_footer__link">о нас</a>
 
 
                                 <a href="activities/index.html" class="nav_footer__link">наши услуги</a>
@@ -92,14 +92,25 @@
         src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/bitrix/js/main/core/core_frame_cache.js?153249039417797"></script>
     <script
         type="text/javascript">var bxDate = new Date(); document.cookie = "BITRIX_SM_TIME_ZONE=" + bxDate.getTimezoneOffset() + "; path=/; expires=Fri, 01-Jan-2038 00:00:00 GMT"</script>
-
-
+    
+    
+    <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/components/interactive_map/script.js"></script>
+    <script type="text/javascript"
+        src="<?php echo get_template_directory_uri() ?>/components/interactive_map_main/script.js"></script>  
+    <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/components/partners/script.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/components/product_slider/script.js"></script>
 
     <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/main.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/contacts.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/career.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/form.js"></script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/fancybox.js"></script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/index.js"></script>
-    <script type="text/javascript"
-        src="<?php echo get_template_directory_uri() ?>/components/interactive_map_main/script.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/about.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/custom-scroll.js"></script>
+    
+  
+  
     <script
         type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "1560f0cab2f34a027d61b07434373ea1"]); _ba.push(["host", "evolet.ru"]); (function () { var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true; ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ba, s); })();</script>
 
