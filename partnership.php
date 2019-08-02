@@ -301,7 +301,7 @@
         
         <input name="web_form_submit" value="Обратиться" class="btn_green_fill" type="submit">
     </div>
-	<br><p>Нажимая на кнопку "Обратиться", Вы даете <a href="../policy/index.html">согласие на обработку своих персональных данных</a></p>
+	<br><p>Нажимая на кнопку "Обратиться", Вы даете <a href="<?php echo home_url( '/' ); ?>/policy">согласие на обработку своих персональных данных</a></p>
 </form>
 
 

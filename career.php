@@ -179,7 +179,7 @@
         Заполните форму для рассмотрения Вашей кандидатуры и прикрепите файл резюме в форматах doc или pdf.<br>
  Также можно отправить резюме на&nbsp;<a href="mailto:hr@evolet.co.uk">hr@evolet.co.uk</a>    </p>
 </section>
-<form id="CAREER" name="CAREER" action="index.html" method="POST" enctype="multipart/form-data">
+<form id="CAREER" name="CAREER" action="" method="POST" enctype="multipart/form-data">
 
     <input type="hidden" name="sessid" id="sessid_1" value="4fc040c9a0c85bf4597b5f9e40bdd278" />    <input type="hidden" name="WEB_FORM_ID" value="5" />
 
@@ -215,7 +215,7 @@
                     
                 
                     
-                                                        <div class="input_wrap">
+                                <div class="input_wrap">
                                     <input name="form_email_17"
                                            value=""
                                            data-code="email"
@@ -312,7 +312,7 @@
                                                                 <div class="file_select">
                                         <label class="file_label">
                                             <div class="loader"></div>
-                                            <img class="icon" src="../local/templates/evolet/img/icons/icon_file.png" alt="">
+                                            <img class="icon" src="<?php echo get_template_directory_uri() ?>/img/icons/icon_file.png" alt="">
                                             <div class="file_info">
                                                 <div class="file_name">Добавить файл</div>
                                                 <div class="file_wheight">125 Kb</div>
@@ -327,7 +327,7 @@
 
                 <input name="web_form_submit" value="Отправить" class="btn_green_fill" type="submit">
             </div>
-		</div><br><p>Нажимая на кнопку "Отправить", Вы даете <a href="../policy/index.html">согласие на обработку своих персональных данных</a></p>
+		</div><br><p>Нажимая на кнопку "Отправить", Вы даете <a href="<?php echo home_url( '/' ); ?>/policy">согласие на обработку своих персональных данных</a></p>
         <div class="thanks">
             Спасибо за заявку! Мы свяжемся с Вами в ближайшее время!
             <button class="btn_green" onclick="careerForm.setReadyState('Добавить резюме')"; type="reset">Отправить ещё</button>
@@ -359,13 +359,13 @@
     <input type="hidden" name="sessid" id="sessid_3" value="4fc040c9a0c85bf4597b5f9e40bdd278" />    <input type="hidden" name="WEB_FORM_ID" value="5" />
 
     <div class="form">
-        <div class="form__wrap">
+        <div class="contacts_form">
             <div class="form__inputs">
 
                 
                     
                                                         <div class="input_wrap">
-                                    <input name="form_text_15"
+                                    <input id="form_name" name="name"
                                            value=""
                                            data-code="fio"
                                            class="input"
@@ -390,7 +390,7 @@
                     
                 
                     
-                                                        <div class="input_wrap">
+                                <div class="input_wrap">
                                     <input name="form_email_17"
                                            value=""
                                            data-code="email"
@@ -493,7 +493,7 @@
                                                 <div class="file_select">
                                 <label class="file_label">
                                     <div class="loader"></div>
-                                    <img class="icon" src="../local/templates/evolet/img/icons/icon_file.png" alt="">
+                                    <img class="icon" src="<?php echo get_template_directory_uri() ?>/img/icons/icon_file.png" alt="">
                                     <div class="file_info">
                                         <div class="file_name">Добавить файл</div>
                                         <div class="file_wheight">125 Kb</div>
@@ -505,8 +505,7 @@
                 
             
         </div>
-
-        <input name="web_form_submit" value="Отправить" class="btn_green_fill" type="submit">
+        <input name="web_form_submit" value="Отправить" class="btn_green_fill button" type="submit">
     </div>
         <br><p>Нажимая на кнопку "Отправить",<br>Вы даете <a href="../policy/index.html">согласие на обработку своих персональных данных</a></p>
 </form>

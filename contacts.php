@@ -5,14 +5,24 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				 <ol class="breadcrumb wow fadeIn"><li><a href="<?php echo home_url( '/' ); ?>">Главная</a></li><li><a href="index.html">Контакты</a></li><li class="active">Офисы компании</li></ol>				<h1 class="contacts_top_header">Офисы компании</h1>
+				 <ol class="breadcrumb wow fadeIn"><li><a href="<?php echo home_url( '/' ); ?>">Главная</a></li><li class="active">Контакты</li></ol>				<h1 class="contacts_top_header">Офисы компании</h1>
 			</div>
 		</div>
 		 
 <div class="contacts_top__list">
     <div class="row">
         <div id="contact-left" class="col-sm-6">
-
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+        <b>ADDRESS</b><br>
+        201-203 (2nd floor),
+        Tower B, Global Business Park,
+        Sector 26, Gurugram – 122002, India. <br>
+        <i class="fa fa-phone" aria-hidden="true"></i>
+        <b>Phone</b><br>
+        +91-0124 4202 936 <br>
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <b>E-mail:</b><br>
+        <a href="mailto:info@evolet.in">info@evolet.in</a> 
         </div>
         <div id="contact-right" class="col-sm-6">
 
@@ -2535,7 +2545,7 @@
 					 
 
 <h2 class="contacts_header">Написать нам</h2>
-<form id="CONTACT_US" name="CONTACT_US" action="index.html" method="POST" enctype="multipart/form-data">
+<form id="CONTACT_US" name="CONTACT_US" action="" method="POST" enctype="multipart/form-data">
 
     <input type="hidden" name="sessid" id="sessid_1" value="4fc040c9a0c85bf4597b5f9e40bdd278" />    <input type="hidden" name="WEB_FORM_ID" value="2" />
 
@@ -2545,8 +2555,8 @@
 
                 
                     
-                                                        <div class="input_wrap">
-                                    <input name="form_text_1"
+                                <div class="input_wrap">
+                                    <input id="form_name" name="name"
                                            value=""
                                            data-code="fio"
                                            class="input"
@@ -2559,7 +2569,7 @@
                 
                     
                                                         <div class="input_wrap">
-                                    <input name="form_text_2"
+                                    <input id="form_phone" name="phone"
                                            value=""
                                            data-code="phone"
                                            class="input"
@@ -2572,7 +2582,7 @@
                 
                     
                                                         <div class="input_wrap">
-                                    <input name="form_email_3"
+                                    <input id="form_email" name="email"
                                            value=""
                                            data-code="email"
                                            class="input"
@@ -2606,19 +2616,18 @@
                 
                     
                                                         <div class="textarea_wrap">
-                                    <textarea class="textarea"
-                                              name="form_textarea_4"
+                                    <textarea id="msg_text" class="textarea"
+                                              name="message"
                                               value=""
                                                                                   ></textarea>
                                     <label class="placeholder">О себе</label>
                                 </div>
                                 
                     
-                
-                <input name="web_form_submit" value="Отправить" class="btn_green_fill" type="submit">
+                <input name="submit" value="Отправить" class="btn_green_fill button" type="submit">
             </div>
         </div>
-		<br><p>Нажимая на кнопку "Отправить", Вы даете <a href="../policy/index.html">согласие на обработку своих персональных данных</a></p>
+		<br><p>Нажимая на кнопку "Отправить", Вы даете <a href="<?php echo home_url( '/' ); ?>/policy">согласие на обработку своих персональных данных</a></p>
         <div class="thanks">
             Спасибо за заявку! Мы свяжемся с Вами в ближайшее время!
             <button class="btn_green" onclick="contactForm.setReadyState()"; type="reset">Отправить ещё</button>

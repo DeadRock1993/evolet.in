@@ -91,3 +91,26 @@ function reset_form(e, text) {
   $(form_wrap).removeClass('submited');
 }
     */
+
+
+
+   $(function() {
+    $(".button").click(function() {
+        var data = {
+            name: $("#form_name").val(),
+            phone: $("#form_phone").val(),
+            email: $("#form_email").val(),
+            message: $("#msg_text").val()
+        };
+        $.ajax({
+          type: "POST",
+          url: theme_directory + "/send_email.php",
+          data: data,
+          success: function(){
+              $('.contacts_form').html('Ваше письмо было отправлено!');
+          }
+      });
+
+        return false;
+    });
+});
