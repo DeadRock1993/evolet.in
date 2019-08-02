@@ -3,13 +3,14 @@
 
 <div class="products_description gray">
     <div class="container">
-        <ol class="breadcrumb wow fadeIn"><li><a href="../index.html">Главная</a></li><li class="active">Продукты</li></ol>        <div class="row">
+        <ol class="breadcrumb wow fadeIn"><li><a href="<?php echo home_url( '/' ); ?>">Главная</a></li><li class="active">Продукты</li></ol>        <div class="row">
             <div class="col-sm-6">
                 <section class="section">
                     <h1 class="section__header">Продукты брендов Spey, Belinda и Vegapharm</h1>
-<p class="section__text">
-	 В 2011 году компания Evolet объединила в себе практически полный цикл услуг в области фарминдустрии - от разработки препаратов до розничных продаж. Централизованное управление этим процессом позволило значительно сократить издержки (за счет сокращения нескольких звеньев) и заметно улучшить соотношение цены и качества поставляемых препаратов.
-</p>                </section>
+                    <p class="section__text">
+                        В 2011 году компания Evolet объединила в себе практически полный цикл услуг в области фарминдустрии - от разработки препаратов до розничных продаж. Централизованное управление этим процессом позволило значительно сократить издержки (за счет сокращения нескольких звеньев) и заметно улучшить соотношение цены и качества поставляемых препаратов.
+                    </p>                
+                </section>
             </div>
             <div class="col-sm-6">
                 <div class="big_text">

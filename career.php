@@ -8,7 +8,7 @@
                 <section class="section">
 
                     
-                    <ol class="breadcrumb wow fadeIn"><li><a href="../index.html">Главная</a></li><li class="active">Карьера</li></ol>                    <h1 class="section__header">Вакансии</h1>
+                    <ol class="breadcrumb wow fadeIn"><li><a href="<?php echo home_url( '/' ); ?>">Главная</a></li><li class="active">Карьера</li></ol>                    <h1 class="section__header">Вакансии</h1>
 
                     <div>
                         <div class="search">

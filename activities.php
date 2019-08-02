@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <section class="section">
-                    <ol class="breadcrumb wow fadeIn"><li><a href="../index.html">Главная</a></li><li class="active">Наши услуги</li></ol>                    <h1 class="section__header">Наши услуги</h1>
+                    <ol class="breadcrumb wow fadeIn"><li><a href="<?php echo home_url( '/' ); ?>">Главная</a></li><li class="active">Наши услуги</li></ol>                    <h1 class="section__header">Наши услуги</h1>
 <p class="section__text">
 	 Деятельность Evolet охватывает множество отраслей фарминдустрии: мы разрабатываем и производим качественные препараты под зарегистрированными торговыми марками, проводим научные и маркетинговые исследования, помогаем нашим партнерам выходить на новые рынки, улучшать свои продукты и увеличивать объемы продаж в аптечных сетях и медицинских учреждениях.
 </p>

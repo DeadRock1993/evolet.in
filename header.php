@@ -56,8 +56,8 @@
                         </nav>
 
                         <div class="contacts">
-                            <a href="tel://+74957813742" class="phone">
-                                <span>+7 495 781-37-42</span>
+                            <a href="tel://+91-0124 4202 936" class="phone">
+                                <span>+91-0124 4202 936</span>
                                 <svg class="icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                     viewBox="0 0 401.998 401.998" style="enable-background:new 0 0 401.998 401.998;"

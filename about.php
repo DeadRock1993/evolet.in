@@ -9,7 +9,7 @@
                 <div class="col-sm-6">
                     <div class="story">
                         <section class="section history">
-                            <ol class="breadcrumb wow fadeIn"><li><a href="../index.html">Главная</a></li><li class="active">О нас</li></ol>                            <h1 class="section__header">История</h1>
+                            <ol class="breadcrumb wow fadeIn"><li><a href="<?php echo home_url( '/' ); ?>">Главная</a></li><li class="active">О нас</li></ol>                            <h1 class="section__header">История</h1>
 <p>
 	 Название «Evolet» от скандинавского – «обещание жизни». Именно это название лучше всего характеризует нашу компанию. Ведь это обещание наша фактическая ответственность, которую Мы берем перед будущим этого Мира и перед Вами. C момента основания, первостепенной задачей компании была забота о здоровье людей, населяющих Мир.
 </p>

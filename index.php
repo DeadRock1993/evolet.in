@@ -3,7 +3,6 @@
         <div class="slider">
 
 
-
             <div id="bx_3218110189_31" class="slide">
                 <img class="slide__img"
                     src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/iblock/ad2/ad2c023b315c2cec8ef285d7a4e4f186.jpg?1532606108215046"
@@ -20,7 +19,7 @@
                             Россия, Казахстан, Узбекистан, Туркменистан, Афганистан, Таджикистан, Кыргызстан,
                             Азербайджан, Грузия, Монголия, Индия, Камбоджа, Мьянма, Вьетнам, Филиппины, в ближайшей
                             перспективе – страны Латинской Америки. </div>
-                        <a href="about/index.html" class="btn_black">О нас</a>
+                        <a href="<?php echo home_url( '/' ); ?>about" class="btn_black">О нас</a>
                     </div>
                 </div>
             </div>
@@ -29,7 +28,7 @@
 
             <div id="bx_3218110189_33" class="slide">
                 <img class="slide__img"
-                    src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/iblock/a64/a645a49454c1502a561bda777ee66d1b.jpg?1532606143295826"
+                    src="<?php echo get_template_directory_uri() ?>/img/ad2c023b315c2cec8ef285d7a4e4f186.jpg"
                     alt="Линейка из более 1200 продуктов">
                 <div class="slide__header">
                     <div class="big">Линейка из более 1200 продуктов</div>
@@ -41,7 +40,7 @@
                         <div class="header_small"></div>
                         <div class="text">
                         </div>
-                        <a href="catalog/index.html" class="btn_black">Продукты</a>
+                        <a href="<?php echo home_url( '/' ); ?>catalog" class="btn_black">Продукты</a>
                     </div>
                 </div>
             </div>
@@ -50,7 +49,7 @@
 
             <div id="bx_3218110189_32" class="slide">
                 <img class="slide__img"
-                    src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/iblock/620/620f552b1cf9f7174634346d33c37cb4.jpg?1532606132167613"
+                    src="<?php echo get_template_directory_uri() ?>/img/620f552b1cf9f7174634346d33c37cb4.jpg"
                     alt="Свыше 1100 сотрудников в более чем&lt;br&gt; в 20 странах мира">
                 <div class="slide__header">
                     <div class="big">Свыше 1100 сотрудников в более чем<br> в 20 странах мира</div>
@@ -62,7 +61,7 @@
                         <div class="header_small"></div>
                         <div class="text">
                         </div>
-                        <a href="career/index.html" class="btn_black">Карьера</a>
+                        <a href="<?php echo home_url( '/' ); ?>career" class="btn_black">Карьера</a>
                     </div>
                 </div>
             </div>
@@ -2710,459 +2709,47 @@
 
                     <div class="wrap_f_slider">
                         <div class="products_slider">
+            
+                        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                        
+                        <div id="bx_3099439860_94" class="product_slider__wrap">
+                            <a href="<?php the_permalink(); ?>" class="products_slider__item">
 
-
-
-                            <div id="bx_3099439860_94" class="product_slider__wrap">
-                                <a href="catalog/ginekologicheskie-preparaty/lilayz-roza-vaginalnye-suppozitorii-5-mg-10/index.html"
-                                    class="products_slider__item">
-
-                                    <div class="label" style="background-color:#FFF0F5;color:#4B0082;">
-                                        Гинекологические препараты </div>
-
-                                    <img src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/resize_cache/iblock/a2f/258_270_1/a2f3073bd77a369ed847d9fa0da5a420.png?153373411142417"
-                                        alt="Лилайз Роза вагинальные суппозитории, 5 мг, №10" class="image">
-                                    <h4 class="card_header">Лилайз Роза вагинальные суппозитории, 5 мг, №10</h4>
-                                    <p class="card_description">
-                                        Лилайз Роза — cпособствует быстрой регенерации и реформированию слизистой
-                                        оболочки влагалища. </p>
-                                    <div class="card_bottom">
-                                        <img class="logo"
-                                            src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/iblock/d09/d0924ed9080f4e28e05d25c8d42af1d8.png?153373771879596"
-                                            alt="SPEY" class="logotype">
-                                    </div>
-                                </a>
+                            <div class="label" style="background-color:#def7c4;color:#417505;">
+                                <?php
+                                $category = get_the_category(); 
+                                echo $category[0]->cat_name; //вывод названия категории на экран
+                                ?>
                             </div>
 
-
-
-                            <div id="bx_3099439860_42" class="product_slider__wrap">
-                                <a href="catalog/vitaminy-i-mineraly/atribet/index.html" class="products_slider__item">
-
-                                    <div class="label" style="background-color:#def7c4;color:#417505;">
-                                        Витамины и минералы </div>
-
-                                    <img src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/resize_cache/iblock/b4b/258_270_1/b4b396d5cea6bae8243f3c927f413420.png?153373725354971"
-                                        alt="Атрибет" class="image">
-                                    <h4 class="card_header">Атрибет</h4>
-                                    <p class="card_description">
-                                        Снижает уровни холестерина и липопротеинов в плазме крови. </p>
-                                    <div class="card_bottom">
-                                        <img class="logo"
-                                            src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/iblock/4d1/4d1f7e024846fe6263749242e9f7b752.png?153373529979524"
-                                            alt="Belinda" class="logotype">
-                                    </div>
-                                </a>
+                            <img  alt="Лилайз Роза вагинальные суппозитории, 5 мг, №10" class="image" src="<?php echo get_the_post_thumbnail_url()?>">
+                            <h4 class="card_header"><?php the_title(); ?></h4>
+                                <p class="card_description"> <?php the_excerpt(); ?> </p>
+                            <div class="card_bottom logo logotype">
+                            <?php if (class_exists('MultiPostThumbnails')) :
+                                MultiPostThumbnails::the_post_thumbnail(
+                                    get_post_type(),
+                                    'secondary-image'
+                                );
+                            endif; ?>
                             </div>
-
-
-
-                            <div id="bx_3099439860_81" class="product_slider__wrap">
-                                <a href="catalog/vitaminy-i-mineraly/lindakalts/index.html"
-                                    class="products_slider__item">
-
-                                    <div class="label" style="background-color:#def7c4;color:#417505;">
-                                        Витамины и минералы </div>
-
-                                    <img src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/resize_cache/iblock/643/258_270_1/6434e11921c70342d4fc669b8dca2eae.png?153373409774222"
-                                        alt="Линдакалц" class="image">
-                                    <h4 class="card_header">Линдакалц</h4>
-                                    <p class="card_description">
-                                        Биологически активная добавка к пище, содержащая в настоящее время наиболее
-                                        усваиваемую форму кальция, аминокислотный хелат и витамин D3 </p>
-                                    <div class="card_bottom">
-                                        <img class="logo"
-                                            src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/iblock/4d1/4d1f7e024846fe6263749242e9f7b752.png?153373529979524"
-                                            alt="Belinda" class="logotype">
-                                    </div>
-                                </a>
-                            </div>
-
-
-
-                            <div id="bx_3099439860_95" class="product_slider__wrap">
-                                <a href="catalog/antigistaminnye-preparaty/tsvetoks-rastvor-dlya-priyema-vnutr-1-mg-120-ml/index.html"
-                                    class="products_slider__item">
-
-                                    <div class="label" style="background-color:#aaeaf7;color:#054475;">
-                                        Антигистаминные препараты </div>
-
-                                    <img src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/resize_cache/iblock/576/258_270_1/5767f8271c119c9a70ed9dbcdfe6a8e3.png?153373409741626"
-                                        alt="Цветокс раствор для приёма внутрь, 1 мг, 120 мл" class="image">
-                                    <h4 class="card_header">Цветокс раствор для приёма внутрь, 1 мг, 120 мл</h4>
-                                    <p class="card_description">
-                                        Цветокс — это противоаллергическое средство — Н1 — гистаминовых рецепторов
-                                        блокатор. </p>
-                                    <div class="card_bottom">
-                                        <img class="logo"
-                                            src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/iblock/d09/d0924ed9080f4e28e05d25c8d42af1d8.png?153373771879596"
-                                            alt="SPEY" class="logotype">
-                                    </div>
-                                </a>
-                            </div>
-
-
-
-                            <div id="bx_3099439860_83" class="product_slider__wrap">
-                                <a href="catalog/neyrotropnye-preparaty/tserebral/index.html"
-                                    class="products_slider__item">
-
-                                    <div class="label" style="background-color:#FAEBD7;color:#B8860B;">
-                                        Нейротропные препараты </div>
-
-                                    <img src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/resize_cache/iblock/d7a/258_270_1/d7a5dd23d9a5e05c3763bfc1a74d4916.png?153373409870765"
-                                        alt="Церебрал" class="image">
-                                    <h4 class="card_header">Церебрал</h4>
-                                    <p class="card_description">
-                                        Рекомендован для улучшения умственной работоспособности, повышения внимания </p>
-                                    <div class="card_bottom">
-                                        <img class="logo"
-                                            src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/iblock/4d1/4d1f7e024846fe6263749242e9f7b752.png?153373529979524"
-                                            alt="Belinda" class="logotype">
-                                    </div>
-                                </a>
-                            </div>
-
-
-
-                            <div id="bx_3099439860_92" class="product_slider__wrap">
-                                <a href="catalog/pishchevaritelnyy-trakt-i-obmen-veshchestv/laktospey-bebi/index.html"
-                                    class="products_slider__item">
-
-                                    <div class="label" style="background-color:#F0FFF0;color:#8FBC8F;">
-                                        Пищеварительный тракт и обмен веществ </div>
-
-                                    <img src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/resize_cache/iblock/602/258_270_1/602f5fd07ce8fd3c5cc31f87420bac5f.png?153373410844131"
-                                        alt="Лактоспей® Беби" class="image">
-                                    <h4 class="card_header">Лактоспей® Беби</h4>
-                                    <p class="card_description">
-                                        Рекомендован детям с нарушенным балансом микрофлоры, а также после перенесенных
-                                        простудных заболеваний, лечения антибиотиками </p>
-                                    <div class="card_bottom">
-                                        <img class="logo"
-                                            src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/iblock/d09/d0924ed9080f4e28e05d25c8d42af1d8.png?153373771879596"
-                                            alt="SPEY" class="logotype">
-                                    </div>
-                                </a>
-                            </div>
-
-
-
-                            <div id="bx_3099439860_87" class="product_slider__wrap">
-                                <a href="catalog/npvp/gervetin-sprey-1-5-mg-30-ml/index.html"
-                                    class="products_slider__item">
-
-                                    <div class="label" style="background-color:#f3eba1;color:#755505;">
-                                        НПВП </div>
-
-                                    <img src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/resize_cache/iblock/262/258_270_1/2628a68ea9692f3be86a0359dab7478f.png?153373409538650"
-                                        alt="Герветин спрей, 1,5 мг, 30 мл" class="image">
-                                    <h4 class="card_header">Герветин спрей, 1,5 мг, 30 мл</h4>
-                                    <p class="card_description">
-                                        Герветин спрей оказывает противовоспалительное, анальгезирующее, местно
-                                        анестезирующее и антибактериальное действие против широкого спектра
-                                        микроорганизмов. </p>
-                                    <div class="card_bottom">
-                                        <img class="logo"
-                                            src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/iblock/d09/d0924ed9080f4e28e05d25c8d42af1d8.png?153373771879596"
-                                            alt="SPEY" class="logotype">
-                                    </div>
-                                </a>
-                            </div>
-
-
-
-                            <div id="bx_3099439860_38" class="product_slider__wrap">
-                                <a href="catalog/serdechno-sosudistye-preparaty/belandzh/index.html"
-                                    class="products_slider__item">
-
-                                    <div class="label" style="background-color:#FFEFD5;color:#800000;">
-                                        Сердечно-сосудистые препараты </div>
-
-                                    <img src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/resize_cache/iblock/75f/258_270_1/75fb93cb90b6a6b43a7b4919742b5467.png?153373409661540"
-                                        alt="Беландж" class="image">
-                                    <h4 class="card_header">Беландж</h4>
-                                    <p class="card_description">
-                                        Бисопролол является высокоселективным бета1-адреноблокатором </p>
-                                    <div class="card_bottom">
-                                        <img class="logo"
-                                            src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/iblock/4d1/4d1f7e024846fe6263749242e9f7b752.png?153373529979524"
-                                            alt="Belinda" class="logotype">
-                                    </div>
-                                </a>
-                            </div>
-
-
-
-                            <div id="bx_3099439860_37" class="product_slider__wrap">
-                                <a href="catalog/urologicheskie-preparaty/proktaluron-rektalnye-suppozitorii-5-mg-10/index.html"
-                                    class="products_slider__item">
-
-                                    <div class="label" style="background-color:#AFEEEE;color:#191970;">
-                                        Урологические препараты </div>
-
-                                    <img src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/resize_cache/iblock/69b/258_270_1/69bef279f83cecb0c1d75ff6417b86c4.png?153373251631964"
-                                        alt="Прокталурон ректальные суппозитории, 5 мг, №10" class="image">
-                                    <h4 class="card_header">Прокталурон ректальные суппозитории, 5 мг, №10</h4>
-                                    <p class="card_description">
-                                        Прокталурон — способствует быстрому восстановлению слизистой оболочки
-                                        аноректального канала. </p>
-                                    <div class="card_bottom">
-                                        <img class="logo"
-                                            src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/iblock/d09/d0924ed9080f4e28e05d25c8d42af1d8.png?153373771879596"
-                                            alt="SPEY" class="logotype">
-                                    </div>
-                                </a>
-                            </div>
-
-
-
-                            <div id="bx_3099439860_82" class="product_slider__wrap">
-                                <a href="catalog/antianemicheskie-preparaty/lindafer-plyus/index.html"
-                                    class="products_slider__item">
-
-                                    <div class="label" style="background-color:#FFDAB9;color:#A52A2A;">
-                                        Антианемические препараты </div>
-
-                                    <img src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/resize_cache/iblock/ccb/258_270_1/ccbeabebf15e4041a5b924e6fd3a09c0.png?153373410865893"
-                                        alt="Линдафер плюс" class="image">
-                                    <h4 class="card_header">Линдафер плюс</h4>
-                                    <p class="card_description">
-                                        Является биологической активной добавкой к пище, которая в своем составе
-                                        содержит железо. </p>
-                                    <div class="card_bottom">
-                                        <img class="logo"
-                                            src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/iblock/4d1/4d1f7e024846fe6263749242e9f7b752.png?153373529979524"
-                                            alt="Belinda" class="logotype">
-                                    </div>
-                                </a>
-                            </div>
-
-
-
-                            <div id="bx_3099439860_79" class="product_slider__wrap">
-                                <a href="catalog/vitaminy-i-mineraly/lindavit-kardio/index.html"
-                                    class="products_slider__item">
-
-                                    <div class="label" style="background-color:#def7c4;color:#417505;">
-                                        Витамины и минералы </div>
-
-                                    <img src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/resize_cache/iblock/742/258_270_1/7425d010f3e5ec736a16c54fd97b2f87.png?153373409841513"
-                                        alt="Линдавит Кардио" class="image">
-                                    <h4 class="card_header">Линдавит Кардио</h4>
-                                    <p class="card_description">
-                                        Является новейшим сбалансированным комплексом биологически активной добавки к
-                                        пище </p>
-                                    <div class="card_bottom">
-                                        <img class="logo"
-                                            src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/iblock/4d1/4d1f7e024846fe6263749242e9f7b752.png?153373529979524"
-                                            alt="Belinda" class="logotype">
-                                    </div>
-                                </a>
-                            </div>
-
-
-
-                            <div id="bx_3099439860_88" class="product_slider__wrap">
-                                <a href="catalog/antigistaminnye-preparaty/divlaksin-zhevatelnye-tabletki-4-mg-20/index.html"
-                                    class="products_slider__item">
-
-                                    <div class="label" style="background-color:#aaeaf7;color:#054475;">
-                                        Антигистаминные препараты </div>
-
-                                    <img src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/resize_cache/iblock/51e/258_270_1/51eac8019bf7aadd7895abdf867fa708.png?153373409627251"
-                                        alt="Дивлаксин жевательные таблетки, 4 мг, №20" class="image">
-                                    <h4 class="card_header">Дивлаксин жевательные таблетки, 4 мг, №20</h4>
-                                    <p class="card_description">
-                                        Дивлаксин является антагонистом лейкотриеновых рецепторов. </p>
-                                    <div class="card_bottom">
-                                        <img class="logo"
-                                            src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/iblock/d09/d0924ed9080f4e28e05d25c8d42af1d8.png?153373771879596"
-                                            alt="SPEY" class="logotype">
-                                    </div>
-                                </a>
-                            </div>
-
-
-
-                            <div id="bx_3099439860_90" class="product_slider__wrap">
-                                <a href="catalog/npvp/inforin-aktiv-gel-50-mg-30-mg-40-g/index.html"
-                                    class="products_slider__item">
-
-                                    <div class="label" style="background-color:#f3eba1;color:#755505;">
-                                        НПВП </div>
-
-                                    <img src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/resize_cache/iblock/bdb/258_270_1/bdb92d1c48e5dfb98eff085774ef1ea5.png?153373409840697"
-                                        alt="Инфорин Актив гель, 50 мг+30 мг, 40 г" class="image">
-                                    <h4 class="card_header">Инфорин Актив гель, 50 мг+30 мг, 40 г</h4>
-                                    <p class="card_description">
-                                        Инфорин Актив гель — нестероидное противовоспалительное средство &#40;НПВП&#41;.
-                                    </p>
-                                    <div class="card_bottom">
-                                        <img class="logo"
-                                            src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/iblock/d09/d0924ed9080f4e28e05d25c8d42af1d8.png?153373771879596"
-                                            alt="SPEY" class="logotype">
-                                    </div>
-                                </a>
-                            </div>
-
-
-
-                            <div id="bx_3099439860_78" class="product_slider__wrap">
-                                <a href="catalog/antimikrobnye-preparaty/belatsef/index.html"
-                                    class="products_slider__item">
-
-                                    <div class="label" style="background-color:#EEE8AA;color:#556B2F;">
-                                        Антимикробные препараты </div>
-
-                                    <img src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/resize_cache/iblock/a62/258_270_1/a625f71d049cd98af1691dd9974731d9.png?153373409643665"
-                                        alt="Белацеф" class="image">
-                                    <h4 class="card_header">Белацеф</h4>
-                                    <p class="card_description">
-                                        Антибактериальные препараты для системного использования. </p>
-                                    <div class="card_bottom">
-                                        <img class="logo"
-                                            src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/iblock/4d1/4d1f7e024846fe6263749242e9f7b752.png?153373529979524"
-                                            alt="Belinda" class="logotype">
-                                    </div>
-                                </a>
-                            </div>
-
-
-
-                            <div id="bx_3099439860_89" class="product_slider__wrap">
-                                <a href="catalog/serdechno-sosudistye-preparaty/diosperedin-tabletki-450-mg-50-mg-30/index.html"
-                                    class="products_slider__item">
-
-                                    <div class="label" style="background-color:#FFEFD5;color:#800000;">
-                                        Сердечно-сосудистые препараты </div>
-
-                                    <img src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/resize_cache/iblock/44d/258_270_1/44dc9f4a21f3884f7f51658a6f73d199.png?153373409741572"
-                                        alt="Диоспередин таблетки, 450 мг+50 мг, №30" class="image">
-                                    <h4 class="card_header">Диоспередин таблетки, 450 мг+50 мг, №30</h4>
-                                    <p class="card_description">
-                                        Диосперидин обладает венотонизирующим и ангиопротективным свойствами </p>
-                                    <div class="card_bottom">
-                                        <img class="logo"
-                                            src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/iblock/d09/d0924ed9080f4e28e05d25c8d42af1d8.png?153373771879596"
-                                            alt="SPEY" class="logotype">
-                                    </div>
-                                </a>
-                            </div>
-
-
-
-                            <div id="bx_3099439860_86" class="product_slider__wrap">
-                                <a href="catalog/npvp/gervetin-pastilki-3-mg-30/index.html"
-                                    class="products_slider__item">
-
-                                    <div class="label" style="background-color:#f3eba1;color:#755505;">
-                                        НПВП </div>
-
-                                    <img src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/resize_cache/iblock/d45/258_270_1/d458b59afcd7287dd004885ab96619ac.png?153373409437610"
-                                        alt="Герветин пастилки, 3 мг, №30" class="image">
-                                    <h4 class="card_header">Герветин пастилки, 3 мг, №30</h4>
-                                    <p class="card_description">
-                                        Герветин оказывает противовоспалительное, анальгезирующее, местно анестезирующее
-                                        и антибактериальное действие против широкого спектра микроорганизмов. </p>
-                                    <div class="card_bottom">
-                                        <img class="logo"
-                                            src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/iblock/d09/d0924ed9080f4e28e05d25c8d42af1d8.png?153373771879596"
-                                            alt="SPEY" class="logotype">
-                                    </div>
-                                </a>
-                            </div>
-
-
-
-                            <div id="bx_3099439860_85" class="product_slider__wrap">
-                                <a href="catalog/antigistaminnye-preparaty/berrilakt/index.html"
-                                    class="products_slider__item">
-
-                                    <div class="label" style="background-color:#aaeaf7;color:#054475;">
-                                        Антигистаминные препараты </div>
-
-                                    <img src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/resize_cache/iblock/563/258_270_1/5634e37450433c09f275fff927b9408a.png?153373409446128"
-                                        alt="Беррилакт" class="image">
-                                    <h4 class="card_header">Беррилакт</h4>
-                                    <p class="card_description">
-                                        Цветокс раствор для приёма внутрь, 1 мг, 120 мл </p>
-                                    <div class="card_bottom">
-                                        <img class="logo"
-                                            src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/iblock/d09/d0924ed9080f4e28e05d25c8d42af1d8.png?153373771879596"
-                                            alt="SPEY" class="logotype">
-                                    </div>
-                                </a>
-                            </div>
-
-
-
-                            <div id="bx_3099439860_91" class="product_slider__wrap">
-                                <a href="catalog/npvp/inforin-tabletki-200-mg-i-400-mg-10/index.html"
-                                    class="products_slider__item">
-
-                                    <div class="label" style="background-color:#f3eba1;color:#755505;">
-                                        НПВП </div>
-
-                                    <img src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/resize_cache/iblock/ff4/258_270_1/ff4a6833430e7e67fdf4e94d7ccab592.png?153373409543049"
-                                        alt="Инфорин таблетки, 200 мг и 400 мг, №10" class="image">
-                                    <h4 class="card_header">Инфорин таблетки, 200 мг и 400 мг, №10</h4>
-                                    <p class="card_description">
-                                        Оказывает анальгезирующее, жаропонижающее и противовоспалительное действие </p>
-                                    <div class="card_bottom">
-                                        <img class="logo"
-                                            src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/iblock/d09/d0924ed9080f4e28e05d25c8d42af1d8.png?153373771879596"
-                                            alt="SPEY" class="logotype">
-                                    </div>
-                                </a>
-                            </div>
-
-
-
-                            <div id="bx_3099439860_98" class="product_slider__wrap">
-                                <a href="catalog/dermatologicheskie-preparaty/vegaderm-maz-0-5mg-10-mg-1-mg-15-mg/index.html"
-                                    class="products_slider__item">
-
-                                    <div class="label" style="background-color:#DCDCDC;color:#2F4F4F;">
-                                        Дерматологические препараты </div>
-
-                                    <img src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/resize_cache/iblock/e47/258_270_1/e47034acf02c5f17282ab5b398acef40.png?153373409755601"
-                                        alt="Вегадерм мазь, 0,5мг+10 мг+1 мг, 15 мг" class="image">
-                                    <h4 class="card_header">Вегадерм мазь, 0,5мг+10 мг+1 мг, 15 мг</h4>
-                                    <p class="card_description">
-                                        Препарат оказывает противовоспалительное, противоаллергическое,
-                                        антибактериальное и противогрибковое действие. </p>
-                                    <div class="card_bottom">
-                                        <img class="logo"
-                                            src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/iblock/c83/c83dfab8d50c560c52041ca8da71c060.png?153373569279524"
-                                            alt="Vegapharm" class="logotype">
-                                    </div>
-                                </a>
-                            </div>
-
-
-
-                            <div id="bx_3099439860_40" class="product_slider__wrap">
-                                <a href="catalog/serdechno-sosudistye-preparaty/bagroven/index.html"
-                                    class="products_slider__item">
-
-                                    <div class="label" style="background-color:#FFEFD5;color:#800000;">
-                                        Сердечно-сосудистые препараты </div>
-
-                                    <img src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/resize_cache/iblock/f93/258_270_1/f9317d8f16df220febd1557a260d1e78.png?153373409654405"
-                                        alt="Багровен" class="image">
-                                    <h4 class="card_header">Багровен</h4>
-                                    <p class="card_description">
-                                        Бисопролол является высокоселективным бета1-адреноблокатором, без собственной
-                                        симпатомиметической и мембраностабилизирующей активности. </p>
-                                    <div class="card_bottom">
-                                        <img class="logo"
-                                            src="https://opt-1287907.ssl.1c-bitrix-cdn.ru/upload/iblock/4d1/4d1f7e024846fe6263749242e9f7b752.png?153373529979524"
-                                            alt="Belinda" class="logotype">
-                                    </div>
-                                </a>
-                            </div>
-
+                            </a>
+                        </div>
+
+                        <?php endwhile; ?>
+<!--
+                        <div class="navigation">
+                            <div class="next-posts"><?php next_posts_link(); ?></div>
+                            <div class="prev-posts"><?php previous_posts_link(); ?></div>
+                        </div>
+-->
+                        <?php else : ?>
+
+                        <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+                            <h1>Не найдено!</h1>
+                        </div>
+
+                        <?php endif; ?>
 
                         </div>
 

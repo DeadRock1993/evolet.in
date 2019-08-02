@@ -5,7 +5,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				 <ol class="breadcrumb wow fadeIn"><li><a href="../index.html">Главная</a></li><li><a href="index.html">Контакты</a></li><li class="active">Офисы компании</li></ol>				<h1 class="contacts_top_header">Офисы компании</h1>
+				 <ol class="breadcrumb wow fadeIn"><li><a href="<?php echo home_url( '/' ); ?>">Главная</a></li><li><a href="index.html">Контакты</a></li><li class="active">Офисы компании</li></ol>				<h1 class="contacts_top_header">Офисы компании</h1>
 			</div>
 		</div>
 		 
