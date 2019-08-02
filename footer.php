@@ -75,7 +75,8 @@
     <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/about.js"></script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/custom-scroll.js"></script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/products.js"></script>
-
+    <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/spritespin.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/product.js"></script>
     <script
         type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "1560f0cab2f34a027d61b07434373ea1"]); _ba.push(["host", "evolet.ru"]); (function () { var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true; ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ba, s); })();
     </script>

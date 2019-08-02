@@ -15,7 +15,7 @@ if (class_exists('MultiPostThumbnails')) {
     );
 }
 add_filter( 'excerpt_length', function(){
-	return 20;
+	return 12;
 } );
 remove_filter( 'the_excerpt', 'wpautop' ); 
 ?>

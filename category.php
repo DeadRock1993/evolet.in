@@ -30,13 +30,18 @@
             <div id="ajax_container" class="col-sm-12">
 
 
-                    <div class="products_slider">
+                    <div class="category-razdel">
                     
-                    <?php // Display blog posts on any page @ http://m0n.co/l
-                    $temp = $wp_query; $wp_query= null;
-                    $wp_query = new WP_Query(); $wp_query->query('showposts=5' . '&paged='.$paged);
-                    while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-                        <div id="bx_3218110189_93" class="product_slider__wrap">
+                            
+                            
+                        <?php
+                                $category = get_queried_object();
+                                global $post;
+                                $args = array( 'nopaging' => true , 'category' => $category->term_id, 'orderby' => 'date');
+                                $myposts = get_posts( $args );
+                                foreach( $myposts as $post ){ setup_postdata($post);
+                                ?>
+                        <div id="bx_3218110189_93" class="product_slider__wrap category-razdel-products">
                             <a href="<?php the_permalink(); ?>" class="products_slider__item">
 
                                 <div class="label" style="background-color:#F0FFF0;color:#8FBC8F;">
@@ -61,25 +66,11 @@
                                 </div>
                             </a>
                         </div>
-
-                        <?php endwhile; ?>
- 
-                        <?php if ($paged > 1) { ?>
-<!--
-            <nav id="nav-posts">
-            <div class="prev"><?php next_posts_link('&laquo; Previous Posts'); ?></div>
-            <div class="next"><?php previous_posts_link('Newer Posts &raquo;'); ?></div>
-            </nav>
-                        -->
-            <?php } else { ?>
-    
-            <nav id="nav-posts">
-                <div class="prev"><?php next_posts_link('&laquo; Previous Posts'); ?></div>
-            </nav>
-    
-            <?php } ?>
-    
-            <?php wp_reset_postdata(); ?>
+                        
+                    <?php
+                            }
+                            wp_reset_postdata();
+                    ?>  
     
             </div>
                 

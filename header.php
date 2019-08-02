@@ -18,6 +18,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" type="text/css"
         rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="<?php echo get_template_directory_uri() ?>/css/product.css" type="text/css"  rel="stylesheet" />
     <link href="<?php echo get_template_directory_uri() ?>/css/products.css" type="text/css"  rel="stylesheet" />
     <link href="<?php echo get_template_directory_uri() ?>/css/contacts.css" type="text/css"  rel="stylesheet" />
     <link href="<?php echo get_template_directory_uri() ?>/css/career.css" type="text/css"  rel="stylesheet" />

@@ -111,7 +111,17 @@ a {
     color: #337ab7;
     text-decoration: none
 }
-
+.mylinks {
+    background-color: transparent;
+    color: #000;
+    text-decoration: none;
+}
+a:active,
+a:hover {
+    text-decoration: none;
+    color: #000;
+    outline: 0
+}
 a:active,
 a:hover {
     outline: 0
@@ -3537,4 +3547,9 @@ body {
 .slick-dots li.slick-active button {
     background-color: #aecd11;
     border: 1px solid #91ac05
+}
+
+.category-razdel-products {
+    float: left;
+    width:25%;
 }
