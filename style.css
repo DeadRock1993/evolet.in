@@ -3553,3 +3553,8 @@ body {
     float: left;
     width:25%;
 }
+
+select {
+    border:none;
+    outline:none;
+}   

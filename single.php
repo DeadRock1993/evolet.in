@@ -48,6 +48,24 @@
                     <h1 class="name"><?php the_title(); ?></h1>
                     <p class="description">
                     <?php the_content(); ?>
+                <div class="tabs">
+                    <div class="tabs__nav"> 
+                        <button class="tabs_btn active">Состав</button>
+                        <button class="tabs_btn">Показания</button>
+                        <button class="tabs_btn">Способ применения</button>
+                    </div>
+                    <div class="tabs_sections tabs__wrap">
+                        <div class="tabs_sections__section active">
+                            <?php the_field('состав'); ?>
+                        </div>
+                        <div class="tabs_sections__section">
+                            <?php the_field('показания'); ?>
+                        </div>
+                        <div class="tabs_sections__section">
+                            <?php the_field('способ_применения'); ?>
+                        </div>
+                    </div>
+                </div>
                     </p>
                 </div>
             </div>

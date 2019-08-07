@@ -23,7 +23,20 @@
 <section class="products">
     <div class="container">
 
-        
+    <div class="row">
+            <div class="col-md-6">
+                        <div class="search">
+                        <form class="search" action="<?php bloginfo('url'); ?>" method="get">
+                            <div class="select__selected">
+                                <div class="description">Выберите тип продукции</div>
+                                <div class="value"><?php wp_dropdown_categories('&hierarchical=1'); ?></div>
+                            </div>
+                            <input class="btn_green_fill" type="submit" name="submit" value="Найти" />
+                        </form>   
+                        </div>
+            </div>
+            
+    </div>
 
         
         <div class="row">
@@ -79,7 +92,13 @@
         </div>
     </div>
 
-            <div class="center show_all"><button class="btn_green"><a class="mylinks" href="<?php echo home_url( '/' ); ?>category/vse-rubriki/">Показать все</a></button></div>
+            <div class="center show_all">
+            <?php if(!is_category(8)) {?>
+            <button class="btn_green">
+                <a class="mylinks" href="<?php echo home_url( '/' ); ?>category/vse-rubriki/">Показать все</a>
+            </button>
+            <?php }?>
+            </div>
     
 </section>
 
