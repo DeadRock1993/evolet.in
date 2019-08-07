@@ -7,7 +7,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <section class="section">
-                    <ol class="breadcrumb wow fadeIn"><li><a href="../index.html">Главная</a></li><li class="active">Политика конфиденциальности</li></ol>                    <h1 class="section__header">Политика конфиденциальности персональных данных</h1>
+                    <ol class="breadcrumb wow fadeIn"><li><a href="<?php echo home_url( '/' ); ?>">Главная</a></li><li class="active">Политика конфиденциальности</li></ol>                    <h1 class="section__header">Политика конфиденциальности персональных данных</h1>
                     <p>
 	 Настоящая Политика конфиденциальности персональных данных (далее – Политика конфиденциальности) действует в отношении всей информации, которую сайт&nbsp;evolet.ru, (далее – evolet) расположенный на доменном имени&nbsp;evolet.ru&nbsp;(а также его субдоменах), может получить о Пользователе во время использования сайта evolet.ru (а также его субдоменов), его программ и его продуктов.
 </p>

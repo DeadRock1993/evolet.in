@@ -2892,6 +2892,7 @@ body {
     letter-spacing: .4px;
     text-align: left;
     color: #000;
+    word-break: break-word;
     opacity: .6
 }
 
