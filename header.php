@@ -18,23 +18,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" type="text/css"
         rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <!--
-    <link href="<?php echo get_template_directory_uri() ?>/css/product.css" type="text/css"  rel="stylesheet" />
-    <link href="<?php echo get_template_directory_uri() ?>/css/contacts.css" type="text/css"  rel="stylesheet" />
-    <link href="<?php echo get_template_directory_uri() ?>/css/career.css" type="text/css"  rel="stylesheet" />
-    <link href="<?php echo get_template_directory_uri() ?>/css/partners.css" type="text/css"  rel="stylesheet" />
-    <link href="<?php echo get_template_directory_uri() ?>/css/activities.css" type="text/css"  rel="stylesheet" />
-  -->
-    <!--
-    #ТО что добавил
-    <link href="<?php echo get_template_directory_uri() ?>/css/all.css" type="text/css" data-template-style="true" rel="stylesheet" />
-  
-    catalog
-    <link href="<?php echo get_template_directory_uri() ?>/css/products.css" type="text/css"  rel="stylesheet" />
-    <link href="<?php echo get_template_directory_uri() ?>/css/about.css" type="text/css"  rel="stylesheet" />
-
-    -->
     <title>Evolet - Вера в здоровое будущее</title>
 </head>
 <body>
