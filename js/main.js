@@ -51,6 +51,15 @@ function toggle_nav() {
   let footerLinks = $('.nav_footer a');
   footerLinks.addClass('nav_footer__link');
 })();
+
+$(window).on('resize',function() {
+if ($(window).width() < 768) {
+  $("#describForProd").removeClass('desktop_only').addClass('mobile_only');
+} else {
+  $("#describForProd").removeClass('mobile_only').addClass('desktop_only');
+}
+
+});
 /*
 $('.file_input').change(function() {
   //находим родительский блок с классом file_select (обертка кнопки)

@@ -38,7 +38,7 @@
             </div>
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <div class="col-sm-6 col-sm-pull-6">
-                <div class="desktop_only">
+                <div id='describForProd' class="desktop_only">
                     <i style="background-color:#def7c4;color:#417505;" class="label">
                         <?php
                         $category = get_the_category(); 
