@@ -48,6 +48,8 @@
                     <h1 class="name"><?php the_title(); ?></h1>
                     <p class="description">
                     <?php the_content(); ?>
+                    </p>
+                </div>
                 <div class="tabs">
                     <div class="tabs__nav"> 
                         <button class="tabs_btn active">Состав</button>
@@ -65,8 +67,6 @@
                             <?php the_field('способ_применения'); ?>
                         </div>
                     </div>
-                </div>
-                    </p>
                 </div>
             </div>
             <?php endwhile; ?>
