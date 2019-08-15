@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri() ?>/favicon.ico" type="image/x-icon">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="robots" content="index, follow" />
     <meta name="keywords" content="Evolet Healthcare, Эволет, фармацевтическая компания" />
@@ -18,15 +18,23 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" type="text/css"
         rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!--
     <link href="<?php echo get_template_directory_uri() ?>/css/product.css" type="text/css"  rel="stylesheet" />
-    <link href="<?php echo get_template_directory_uri() ?>/css/products.css" type="text/css"  rel="stylesheet" />
     <link href="<?php echo get_template_directory_uri() ?>/css/contacts.css" type="text/css"  rel="stylesheet" />
     <link href="<?php echo get_template_directory_uri() ?>/css/career.css" type="text/css"  rel="stylesheet" />
     <link href="<?php echo get_template_directory_uri() ?>/css/partners.css" type="text/css"  rel="stylesheet" />
     <link href="<?php echo get_template_directory_uri() ?>/css/activities.css" type="text/css"  rel="stylesheet" />
-    <link href="<?php echo get_template_directory_uri() ?>/css/about.css" type="text/css"  rel="stylesheet" />
-    <link href="<?php echo get_template_directory_uri() ?>/style.css" type="text/css" rel="stylesheet" />
+  -->
+    <!--
+    #ТО что добавил
     <link href="<?php echo get_template_directory_uri() ?>/css/all.css" type="text/css" data-template-style="true" rel="stylesheet" />
+  
+    catalog
+    <link href="<?php echo get_template_directory_uri() ?>/css/products.css" type="text/css"  rel="stylesheet" />
+    <link href="<?php echo get_template_directory_uri() ?>/css/about.css" type="text/css"  rel="stylesheet" />
+
+    -->
     <title>Evolet - Вера в здоровое будущее</title>
 </head>
 <body>

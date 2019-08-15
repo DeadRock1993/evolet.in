@@ -3243,3 +3243,35 @@ body {
     background-color: #aecd11;
     border: 1px solid #91ac05
 }
+
+.header .nav_header a {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: #4a4a4a;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-right: 22px;
+  }
+  .header .nav_header a:last-child {
+    margin-right: 0;
+  }
+  .header .nav_header a.active,
+  .header .nav_header a:hover {
+    color: #b8cf41;
+    text-decoration: none;
+  }
+
+
+.category-razdel-products {
+    float: left;
+    width:25%;
+}
+
+@media screen and (max-width: 980px) {
+    .category-razdel-products {
+        float: left;
+        width:100%;
+    }
+}
